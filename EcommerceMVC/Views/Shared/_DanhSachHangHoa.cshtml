@@ -1,0 +1,113 @@
+﻿@{
+    Layout="_LayoutCustomer";
+}
+<!-- Single Page Header start -->
+<!-- Single Page Header start -->
+@RenderSection("BreadCum", required: false)
+<!-- Single Page Header End -->
+<!-- Fruits Shop Start-->
+<div class="container-fluid fruite py-5">
+	<div class="container py-5">
+		<h1 class="mb-4">TLSHOP</h1>
+		<div class="row g-4">
+			<div class="col-lg-12">
+				<div class="row g-4">
+					<div class="col-xl-3">
+						@await Html.PartialAsync("_TimKiemPanel")
+					</div>
+					<div class="col-6"></div>
+					<div class="col-xl-3">
+
+					</div>
+				</div>
+				<div class="row g-4">
+					<div class="col-lg-3">
+						<div class="row g-4">
+							@await Component.InvokeAsync("MenuLoai")
+
+							
+							
+							<div class="col-lg-12">
+								<h4 class="mb-3">Sản phẩm nôi bật</h4>
+								<div class="d-flex align-items-center justify-content-start">
+									<div class="rounded me-4" style="width: 100px; height: 100px;">
+										<img src="~/img/dautay3.jpg" class="img-fluid rounded" alt="">
+									</div>
+									<div>
+										<h6 class="mb-2">Dâu Tây</h6>
+										<div class="d-flex mb-2">
+											<i class="fa fa-star text-secondary"></i>
+											<i class="fa fa-star text-secondary"></i>
+											<i class="fa fa-star text-secondary"></i>
+											<i class="fa fa-star text-secondary"></i>
+											<i class="fa fa-star"></i>
+										</div>
+										<div class="d-flex mb-2">
+											<h5 class="fw-bold me-2">₫69.000</h5>
+											<h5 class="text-danger text-decoration-line-through">₫80.000</h5>
+										</div>
+									</div>
+								</div>
+								<div class="d-flex align-items-center justify-content-start">
+									<div class="rounded me-4" style="width: 100px; height: 100px;">
+										<img src="~/img/macca.jpg" class="img-fluid rounded" alt="">
+									</div>
+									<div>
+										<h6 class="mb-2">Macca</h6>
+										<div class="d-flex mb-2">
+											<i class="fa fa-star text-secondary"></i>
+											<i class="fa fa-star text-secondary"></i>
+											<i class="fa fa-star text-secondary"></i>
+											<i class="fa fa-star text-secondary"></i>
+											<i class="fa fa-star"></i>
+										</div>
+										<div class="d-flex mb-2">
+											<h5 class="fw-bold me-2">₫89.000</h5>
+											<h5 class="text-danger text-decoration-line-through">₫99.000</h5>
+										</div>
+									</div>
+								</div>
+								<div class="d-flex align-items-center justify-content-start">
+									<div class="rounded me-4" style="width: 100px; height: 100px;">
+										<img src="~/img/nuocepdt.jpg" class="img-fluid rounded" alt="">
+									</div>
+									<div>
+										<h6 class="mb-2">Nước ép dâu tằm</h6>
+										<div class="d-flex mb-2">
+											<i class="fa fa-star text-secondary"></i>
+											<i class="fa fa-star text-secondary"></i>
+											<i class="fa fa-star text-secondary"></i>
+											<i class="fa fa-star text-secondary"></i>
+											<i class="fa fa-star"></i>
+										</div>
+										<div class="d-flex mb-2">
+											<h5 class="fw-bold me-2">₫59.000</h5>
+											<h5 class="text-danger text-decoration-line-through">₫79.000</h5>
+										</div>
+									</div>
+								</div>
+								<div class="d-flex justify-content-center my-4">
+									<a href="#" class="btn border border-secondary px-4 py-3 rounded-pill text-primary w-100">Vew More</a>
+								</div>
+							</div>
+							<div class="col-lg-12">
+								<div class="position-relative">
+									<img src="~/img/hong-treo-gio-dalavi-dalat.jpg" class="img-fluid w-100 rounded" alt="">
+									<div class="position-absolute" style="top: 50%; right: 10px; transform: translateY(-50%);">
+										<h3 class="text-secondary fw-bold">Đặc <br> Biệt</h3>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-9">
+						<div class="row g-4 justify-content-center">
+							@RenderBody()
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Fruits Shop End-->			
